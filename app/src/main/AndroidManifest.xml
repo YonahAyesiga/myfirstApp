@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
             android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
@@ -20,11 +23,8 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <!-- No launcher intent here -->
-        <activity
-            android:name=".SplashActivity2"
-            android:exported="true" />
+        </activity> <!-- No launcher intent here -->
+
         <activity
             android:name=".MainActivity"
             android:exported="true" />
